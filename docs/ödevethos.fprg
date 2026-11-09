@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="&#246;devethos"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-09 08:58:39 &#214;S"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLUNUVTc3UlU7MjAyNi0xMS0wOTswNzo1MjoyNyDDllM7Mjg0Mw=="/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLUNUVTc3UlU7MjAyNi0xMS0wOTswODo1ODozOSDDllM7MTsyOTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mevcutKat, hedefKat, mesafe, yon" type="Integer" array="False" size=""/>
+            <output expression="&quot;Mevcut katinizi giriniz&quot;" newline="True"/>
+            <input variable="mevcutKat"/>
+            <output expression="&quot;Hedef katinizi giriniz&quot;" newline="True"/>
+            <input variable="hedefKat"/>
+            <if expression="mevcutKat &gt;= 1 and mevcutKat &lt;= 10 and hedefKat &gt;= 1 and hedefKat &lt;= 10">
+                <then>
+                    <if expression="hedefKat &gt; mevcutKat">
+                        <then>
+                            <assign variable="yon" expression="&quot;Yukari&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="hedefKat &lt; mevcutKat">
+                                <then>
+                                    <assign variable="yon" expression="&quot;Asagi&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="yon" expression="&quot;Hareket yok&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                    <assign variable="mesafe" expression="Abs(hedefKat - mevcutKat)"/>
+                    <output expression="yon" newline="True"/>
+                    <output expression="mesafe" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Hatal&#305; giri&#351; l&#252;tfen 1 ile 10 aras&#305;ndan bir say&#305; girin&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
