@@ -5,7 +5,7 @@
 
 ## 1. Problemin Açıklaması
 <!-- Problemi kendi cümlelerinizle yazın. -->
-10 katlı bir asansörü kullanan kullanıcının, bulunduğu kattan istenen kata gidebilmesi için gitmesi gereken mesafe,yön ve işlemi bulunuz.=> bizim problemimizdir bizse algoritmalarla bunu çözeriz.
+10 katlı bir asansörün nasıl çalışacağını anlatan bir algoritma hazırladım Kullanıcıdan bulunduğu katı ve gitmek istediği katı alıyoruz. Daha sonra asansörün hangi yöne gideceğini ve kaç kat ilerlemesi gerektiğini hesaplıyoruz. Girilen katlar geçerli değilse hata mesajı gösteriyoruz.
 
 ## 2. Girdi - İşlem - Çıktı
 
@@ -45,7 +45,7 @@ BİTİR
 ## 4. Akış Şeması
 
 ![Akış Şeması](docs/akis-semasi.png)
-<img width="974" height="1078" alt="Ekran görüntüsü 2026-11-09 223305" src="https://github.com/user-attachments/assets/429c29fa-2201-45b9-a863-4a71f313fa18" />
+
 
 
 
