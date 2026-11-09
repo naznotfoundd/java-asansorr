@@ -1,29 +1,45 @@
 # Rapor
 
-**Ad Soyad:**
-**Numara:**
+**Ad Soyad:Naz Kuruçay**
+**Numara:663**
 
 ## 1. Problemin Açıklaması
 <!-- Problemi kendi cümlelerinizle yazın. -->
-
+10 katlı bir asansörü kullanan kullanıcının, bulunduğu kattan istenen kata gidebilmesi için gitmesi gereken mesafe,yön ve işlemi bulunuz.
 
 ## 2. Girdi - İşlem - Çıktı
 
 **Girdiler:**
--
+Mevcut kat bilgisi(x),
+Hedef kat bilgisi(y)
 
 **İşlemler:**
--
-
+y>x ise yukarı yönde hareket et,
+x>y ise aşağı yönde hareket et,
+x=y ise hareket etme.
 **Çıktılar:**
--
+Hareket yönü,
+Hareket mesafesi,
+işlem sonucu,
+mevcut kat,
+hedef kat
 
 ## 3. Sözde Kod (Pseudocode)
 
-```
-1.
-2.
-3.
+```BAŞLA
+1.Kullanıcıdan mevcut katı al.
+2.Kullanıcıdan hedef katı al.
+3.Mevcut katın 1 ile 10 arasında olup olmadığını denetle.
+4.Hedef katın 1 ile 10 arasında olup olmadığını denetle.
+5.Eğer mevcut kat veya hedef kat geçersizse hata mesajı yazdır.
+6.Eğer değilse :
+ Hedef kat mevcut kattan büyükse yukarı yönde çık.
+ Hedef kat mevcut kattan küçükse aşağı yönde çık.
+ İki kat birbirine eşitse hareket etme.
+7.İki kat arasındaki farkı hesapla.
+8.Mevcut kat,hedef kat,yönü ve mesafeyi yazdır.
+9.İşlem sonucunu ekrana yazdır.
+BİTİR
 ```
 
 ## 4. Akış Şeması
@@ -34,9 +50,9 @@
 
 | Mevcut kat | Hedef kat | Beklenen sonuç | Programın sonucu | Doğru mu? |
 |---|---|---|---|---|
-| 3 | 8 | 5 kat yukarı | | |
-| 9 | 2 | 7 kat aşağı | | |
-| 5 | 5 | Hareket yok | | |
+| 3 | 8 | 5 kat yukarı | 5 kat yukarı | Evet |
+| 9 | 2 | 7 kat aşağı | 7 kat aşağı | |
+| 5 | 5 | Hareket yok | Hareket yok | |
 | 1 | 10 | 9 kat yukarı | | |
 | 10 | 1 | 9 kat aşağı | | |
 | 0 | 5 | Geçersiz mevcut kat | | |
