@@ -16,7 +16,7 @@ public class Main {
         hedefKat = scanner.nextInt();
 
         if (mevcutKat < 1 || mevcutKat > 10 || hedefKat < 1 || hedefKat > 10) {
-            System.out.println("Hatalı kat girdiniz!");
+            System.out.println("Hatalı kat girdinizz");
         } else {
             mesafe = Math.abs(hedefKat - mevcutKat);
 
