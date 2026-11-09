@@ -5,17 +5,33 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // TODO: 1. Kullanıcıdan mevcut katı ve hedef katı alın
+        int mevcutKat;
+        int hedefKat;
+        int mesafe;
 
-        // TODO: 2. Girdileri kontrol edin (1-10 arası olmalı)
+        System.out.print("Mevcut katı giriniz: ");
+        mevcutKat = scanner.nextInt();
 
-        // TODO: 3. Hareket yönüne karar verin
+        System.out.print("Hedef katı giriniz: ");
+        hedefKat = scanner.nextInt();
 
-        // TODO: 4. Hareket mesafesini hesaplayın
+        if (mevcutKat < 1 || mevcutKat > 10 || hedefKat < 1 || hedefKat > 10) {
+            System.out.println("Hatalı kat girdiniz!");
+        } else {
+            mesafe = Math.abs(hedefKat - mevcutKat);
 
-        // TODO: 5. Sonucu ekrana yazdırın
+            System.out.println("Mevcut kat: " + mevcutKat);
+            System.out.println("Hedef kat: " + hedefKat);
+            System.out.println("Mesafe: " + mesafe + " kat");
 
-        // TODO (Opsiyonel): Geçilen katları sırasıyla yazdırın
+            if (hedefKat > mevcutKat) {
+                System.out.println("Yukarı çık");
+            } else if (hedefKat < mevcutKat) {
+                System.out.println("Aşağı in");
+            } else {
+                System.out.println("Hareket etme");
+            }
+        }
 
         scanner.close();
     }
